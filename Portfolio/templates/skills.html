@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Darshan Kudache</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav1.css') }}">
+    <style>
+        h2 {
+            text-align: center;
+            color: #b49459;
+            margin-bottom: 1cm;
+        }
+
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 2cm;
+            margin-top: 2cm;
+        }
+
+        .skill {
+            background-color: #f9f9f9;
+            color: #000000;
+            padding: 2cm;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(1, 253, 253, 0.2);
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill h3 {
+            color: #b49459;
+            margin-bottom: 0.5cm;
+        }
+
+        .skill ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill li {
+            margin-bottom: 0.5cm;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: #555;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 1cm;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #b49459;
+            width: 85%;
+            transition: width 1s ease-in-out;
+        }
+
+        .skill:hover .progress {
+            width: 95%;
+        }
+        .ski {
+        text-align: center;
+        color: #b49459;
+        font-size: 2em;
+        margin-bottom: 0.5cm;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <h1><em>D7</em></h1>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/skills">Skills</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="skills">
+            <div class="container">
+                <h2 class="ski">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Analytical</li>
+                            <li>Problem-Solving</li>
+                            <li>Leadership</li>
+                            <li>Adaptability</li>
+                            <li>Quick Learner</li>
+                        </ul>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>Flask</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3>Key Strengths</h3>
+                        <ul>
+                            <li>Software Development Life Cycle (SDLC)</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Debugging and Troubleshooting</li>
+                            <li>Database Management</li>
+                            <li>Web Development</li>
+                            <li>System Scalability</li>
+                            <li>Software Installation and Configuration</li>
+                        </ul>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Darshan Kudache. All rights reserved.</p>
+            <div class="social-link">
+                <a href="mailto:kbdarshan0007@gmail.com"><img src="static/email.png" alt="Email"></a>
+                <a href="tel:+919533539679"><img src="static/phone.png" alt="Phone"></a>
+                <a href="https://www.linkedin.com/in/darshan-kudache-a4369328b"><img src="static/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Darshan Kudache</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav1.css') }}">
+    <style>
+        .project {
+            background-color: #fff;
+            color: black;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: #b49459;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .project p {
+            margin-bottom: 1em;
+        }
+
+        .project ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 1em;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 0.5em;
+            color: #fff;
+            background-color: #b49459;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #95533d;
+        }
+
+        .pro {
+        text-align: center;
+        color: #b49459;
+        font-size: 2em;
+        margin-bottom: 0.5cm;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <h1><em>D7</em></h1>
+                  </div>
+                  <div class="nav-right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/skills">Skills</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h2 class="pro">Projects</h2>
+
+                <div class="project">
+                    <h3>Dairy Management System</h3>
+                    <p>Tools: PHP, HTML, CSS, JavaScript, Bootstrap</p>
+                    <p>Developed an online management system to automate and enhance communication between rural residents and dairy management.</p>
+                    <ul>
+                        <li>Led the Front-End Development team in creating an online management system to automate communication between rural residents and dairy management.</li>
+                        <li>Utilized VsCode for efficient coding, PHP for server-side scripting, and employed HTML, CSS, JavaScript, Bootstrap for the user interface.</li>
+                        <li>Collaborated with a team of 3 members, ensuring timely project delivery.</li>
+                        <li>Implemented responsive design principles for accessibility across devices.</li>
+                        <li>Integrated user feedback mechanisms to continuously improve usability.</li>
+                    </ul>
+                    <a href="#">View Project</a>
+                </div>
+
+                <div class="project">
+                    <h3>Online Store Website</h3>
+                    <p>Tools: HTML, CSS, JavaScript, Bootstrap</p>
+                    <p>Designed and developed a responsive online store website with a focus on user experience and product management.</p>
+                    <ul>
+                        <li>Created a seamless shopping experience using HTML, CSS, JavaScript, and Bootstrap for responsive design.</li>
+                        <li>Implemented dynamic product catalog management and checkout functionalities.</li>
+                        <li>Enhanced site performance through optimized front-end techniques and efficient code practices.</li>
+                        <li>Collaborated with stakeholders to refine product features and user interface designs.</li>
+                    </ul>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 Darshan Kudache. All rights reserved.</p>
+          <div class="social-link">
+            <a href="mailto:kbdarshan0007@gmail.com"><img src="static/email.png" alt="Email"></a>
+            <a href="tel:+919533539679"><img src="static/phone.png" alt="Phone"></a>
+            <a href="https://www.linkedin.com/in/darshan-kudache-a4369328b"><img src="static/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Darshan Kudache</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav1.css') }}">
+    <style>
+        h2 {
+        text-align: center;
+        color: #b49459;
+        font-size: 2em;
+        margin-bottom: 0.5cm;
+        }
+        .container{
+            text-align: center;
+        }
+        .container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            color: #555;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .social-links {
+            margin-top: 1em;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <h1><em>D7</em></h1>
+                  </div>
+                  <div class="nav-right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/skills">Skills</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact">
+            <div class="container1">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:kbdarshan0007@gmail.com">kbdarshan0007@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919533539679">+91 9533539679</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/darshan-kudache-a4369328b">Darshan Kudache</a></p>
+                    <div class="social-links">
+                        <a href="mailto:kbdarshan0007@gmail.com"><img src="static/email.png" alt="Email"></a>
+                        <a href="tel:+919533539679"><img src="static/phone.png" alt="Phone"></a>
+                        <a href="https://www.linkedin.com/in/darshan-kudache-a4369328b"><img src="static/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 Darshan Kudache. All rights reserved.</p>
+          <div class="social-link">
+            <a href="mailto:kbdarshan0007@gmail.com"><img src="static/email.png" alt="Email"></a>
+            <a href="tel:+919533539679"><img src="static/phone.png" alt="Phone"></a>
+            <a href="https://www.linkedin.com/in/darshan-kudache-a4369328b"><img src="static/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
